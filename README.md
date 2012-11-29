@@ -3,7 +3,7 @@
 The most efficient way to use mustache templates with SendGrid: send 1000 mustache mails with only 1 POST request.  
    
 Instead of sending 1000 rendered mustache mails (with different `html` properties) through 1000 POST requests,
-we map mustache variables to the SendGrid X-SMTPAPI so that the same job is done only with 1 POST request.
+we map mustache variables to the SendGrid X-SMTPAPI so that the same job is done with only 1 POST request.
 
 ## Installation
 
