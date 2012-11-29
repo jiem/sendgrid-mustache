@@ -19,8 +19,8 @@ Additionnally, you can specify a template file with `textTemplate` and `htmlTemp
 * `users` is an array of JSON objects with an `email` property and the other mustache parameters.
   
 * `callback` is a `function(success, message, end)` called if 1000 emails have been sent or if all emails have been sent.
-The `end` parameter is a boolean indicating if it's the latter case.
-For example, if we're sending 3500 mails, the callback will be call 3 first times with `end === false` and one last time with `end === true`.
+The `end` parameter is a boolean indicating if it's the latter.
+For example, if we're sending 3500 mails, the callback will be called 3 first times with `end === false` and one last time with `end === true`.
 
 ## Example
 
