@@ -77,8 +77,8 @@ function initMustache(email) {
   if (email.html)
     email.html = email.html.replace(mustacheVarReg, '{{$1}}');  
   
-  email.mustacheVars = {};
-  match = (email.html || email.text).match(mustacheVarReg);
+  email.mustacheVars = {};  
+  match = (email.subject + email.text + email.html).match(mustacheVarReg);
   if (match)
     for (i = 0; mustacheVar = match[i]; i++)
       email.mustacheVars[mustacheVar.substring(2, mustacheVar.length - 2)] = 1;    
