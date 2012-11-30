@@ -20,7 +20,8 @@ Additionnally, you can specify a template file with `textTemplate` and `htmlTemp
   
 * `callback` is a `function(success, message, end)` called if 1000 emails have been sent or if all emails have been sent.
 The `end` parameter is a boolean indicating if it's the latter.
-For example, if we're sending 3500 mails, the callback will be called 3 first times with `end === false` and one last time with `end === true`.
+For example, if we're sending 3500 mails, the callback will be called 3 first times
+with `end === false` for the first 3000 emails and one last time with `end === true` for the last 500 emails.
 
 ## Example
 
