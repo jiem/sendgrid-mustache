@@ -10,6 +10,6 @@
     "node": ">=0.4.7"
   },
   "dependencies": {
-    "sendgrid": ">=0.2.5"
+    "sendgrid": "0.2.5"
   }
 }
