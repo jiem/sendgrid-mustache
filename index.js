@@ -86,5 +86,24 @@ function initMustache(email) {
 }
 
 
+//==============================================================================
+var encodeHtml = (function() {
 
+  var specialCharEscaped = { 
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  };
+
+  return function(str) {
+    return str.replace(/[&<>'"]/g, function(c) {
+      return specialCharEscaped[c];
+    });
+  }
+
+}());
+
+ 
 
