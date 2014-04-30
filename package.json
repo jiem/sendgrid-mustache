@@ -1,7 +1,7 @@
 {
   "name": "sendgrid-mustache",
   "description": "The most efficient way to use mustache templates with SendGrid: send 1000 mustache mails with only 1 POST request.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Jie Meng-Gerard <contact@jie.fr>",
   "repository": "git://github.com/jiem/sendgrid-mustache",  
   "keywords": ["sendgrid", "mustache", "email", "mail", "template", "api"],
